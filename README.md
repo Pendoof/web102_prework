@@ -1,10 +1,9 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Game Starter*
+Submitted by: **Derek Chen**
 
-Submitted by: **Your Name Here**
+**Game Starter** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
-
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Required Features
 
@@ -19,14 +18,18 @@ The following **optional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
 
+* [ ] Added search bar for game names and descriptions
+
+* [ ] Games are now clickable to expand allowing for longer descriptions for those who are interested
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/W6X6hqF' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with OBS, Canva, Imgur
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -38,7 +41,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2026 Derek Chen
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
