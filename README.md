@@ -26,10 +26,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/W6X6hqF' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![demo video](./assets/Demo.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with OBS, Canva, Imgur
+GIF created with OBS, Canva
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
