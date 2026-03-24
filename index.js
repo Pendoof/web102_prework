@@ -54,6 +54,7 @@ function addGamesToPage(games) {
             <p>${game.description}</p>
             <p>Backers: ${game.backers}</p>
         `;
+        gameCard.addEventListener("click", () => addSelectedGameToPage(game));
         gamesContainer.appendChild(gameCard);
     }
 }
@@ -185,3 +186,38 @@ firstGameContainer.appendChild(firstGameElement);
 const secondGameElement = document.createElement("p");
 secondGameElement.innerHTML = secondGame.name;
 secondGameContainer.appendChild(secondGameElement);
+
+const selectedContainer = document.getElementById("selected-container");
+
+function addSelectedGameToPage(game) {
+    const gameCard = document.createElement("div");
+    gameCard.classList.add("game-card", "selected");
+    gameCard.innerHTML = `
+        <img src="${game.img}" class="game-img" />
+        <div>
+        <h3>${game.name}</h3>
+        <p>Example of a longer description that could be added to the page. This description is not from the original data, but it could be added to the JSON data and displayed in this way.</p>
+        </div>
+    `;
+    if (selectedContainer.firstChild) {
+        selectedContainer.removeChild(selectedContainer.firstChild);
+    }
+    selectedContainer.appendChild(gameCard);
+}
+
+const searchInput = document.getElementById("search-input");
+
+searchInput.addEventListener("input", (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+    const filteredGames = GAMES_JSON.filter((game) => {
+        return game.name.toLowerCase().includes(searchTerm) || game.description.toLowerCase().includes(searchTerm);
+    });
+    deleteChildElements(gamesContainer);
+    if (filteredGames.length === 0) {
+        const noResultsElement = document.createElement("p");
+        noResultsElement.innerHTML = "No games found :(";
+        gamesContainer.appendChild(noResultsElement);
+        return;
+    }
+    addGamesToPage(filteredGames);
+});

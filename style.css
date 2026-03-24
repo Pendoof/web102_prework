@@ -78,3 +78,27 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+#selected-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.selected {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.selected .game-img {
+    width: 50%;
+    margin-right: 2%;
+}
+
+#search-input {
+    width: 800px;
+    padding: 0.5%;
+    border-radius: 7px;
+    border: none;
+}
